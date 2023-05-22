@@ -30,6 +30,6 @@
     menu.classList.remove('is-visible');
   };
 
-  init();
+  // init();
   
 })();
