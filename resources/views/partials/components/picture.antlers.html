@@ -1,0 +1,29 @@
+<picture>
+  <source
+    srcset="
+        {{ glide:image preset='xs-avif' }} 320w,
+        {{ glide:image preset='sm-avif' }} 480w,
+        {{ glide:image preset='md-avif' }} 768w,
+        {{ glide:image preset='lg-avif' }} 1280w,
+        {{ glide:image preset='xl-avif' }} 1440w"
+    sizes="{{ sizes }}"
+    type="image/avif"
+  >
+  <source
+    srcset="
+        {{ glide:image preset='xs-webp' }} 320w,
+        {{ glide:image preset='sm-webp' }} 480w,
+        {{ glide:image preset='md-webp' }} 768w,
+        {{ glide:image preset='lg-webp' }} 1280w,
+        {{ glide:image preset='xl-webp' }} 1440w"
+    sizes="{{ sizes }}"
+    type="image/webp"
+  >
+  <img 
+    src="{{ glide:image preset='lg' }}"
+    width="1000" 
+    height="1000" 
+    class="block aspect-square" 
+    alt="{{ title }}" 
+    loading="lazy">
+</picture>
