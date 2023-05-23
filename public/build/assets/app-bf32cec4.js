@@ -1,1 +1,0 @@
-(function(){const t={btn:"[data-btn-menu]",menu:"[data-menu]"},n=()=>{document.querySelector(t.btn).addEventListener("click",e)},e=()=>{document.querySelector(t.menu).classList.toggle("is-visible"),document.querySelector(t.btn).classList.toggle("is-active")};n()})();

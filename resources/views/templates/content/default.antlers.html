@@ -1,8 +1,8 @@
-{{ partial:layout/section :class="'flex justify-end relative min-h-[100vh] overflow-hidden'" }}
+{{ partial:layout/section :class="'flex justify-end relative min-h-[calc(100vh-36px)] lg:min-h-screen overflow-hidden'" }}
   <div class="absolute w-full top-0 z-0">
     {{ partial:components/gallery }}
   </div>
-  <article class="content bg-cyan w-full lg:w-[50%] p-18 relative z-10">
+  <article class="content bg-cyan w-full lg:w-[50%] p-18 relative z-10" data-content>
     {{ content }}
   </article>
 {{ /partial:layout/section }}

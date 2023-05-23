@@ -3,6 +3,8 @@
   const selectors = {
     btn: '[data-btn-menu]',
     menu: '[data-menu]',
+    subline: '[data-subline]',
+    content: '[data-content]',
   };
 
   const init = () => {
@@ -16,6 +18,14 @@
 
     const btn = document.querySelector(selectors.btn);
     btn.classList.toggle('is-active');
+
+    const subline = document.querySelector(selectors.subline);
+    if (subline) {
+      subline.classList.toggle('!hidden');
+    }
+
+    const content = document.querySelector(selectors.content);
+    content.classList.toggle('is-hidden');
   };
 
   init();

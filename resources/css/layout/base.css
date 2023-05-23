@@ -14,6 +14,14 @@ body {
 main {
 }
 
+.content {
+  @apply translate-x-0 transition-transform duration-300;
+}
+
+.content.is-hidden {
+  @apply translate-x-full transition-transform duration-300;
+}
+
 .content a {
   @apply text-deepblue;
 }
