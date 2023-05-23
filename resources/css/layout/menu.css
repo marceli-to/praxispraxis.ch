@@ -1,0 +1,27 @@
+.btn-menu {
+  @apply flex items-end justify-center w-24 h-18 lg:!hidden
+}
+
+.btn-menu svg:first-of-type {
+  @apply block
+}
+
+.btn-menu svg:last-of-type {
+  @apply hidden
+}
+
+.btn-menu.is-active svg:first-of-type {
+  @apply !hidden
+}
+
+.btn-menu.is-active svg:last-of-type {
+  @apply !block
+}
+
+.menu {
+  @apply hidden fixed left-0 top-36 lg:!block lg:top-auto lg:bottom-72 lg:left-auto lg:translate-x-full lg:right-[calc((100%-580px)/2)] xl:right-[calc((100%-660px)/2)] 3xl:right-[calc((100%-1200px)/2)]
+}
+
+.menu.is-visible {
+  @apply block
+}

@@ -25,12 +25,31 @@ module.exports = {
       },
 
       fontSize: {
-        'base': '1rem',     // 16px
-        'sm': '1.125rem',   // 18px
-        'md': '1.3125rem',  // 21px
-        'lg': '1.75rem',    // 28px
-        'xl': '2.125rem',   // 34px
+        // size 14px, line-height 17px in rem
+        'xs': ['0.875rem', { lineHeight: '1.0625rem' }],
+
+        // sm size 21px, line-height 24px in rem
+        'sm': ['1.3125rem', { lineHeight: '1.5rem' }],
+
+        // base size 23px, line-height 36px in rem
+        'base': ['1.4375rem', { lineHeight: '2.25rem' }],
+
+        // md size 24px, line-height 30px in rem
+        'md': ['1.5rem', { lineHeight: '1.875rem' }],
+
+        // lg size 32px, line-height 46px in rem
+        'lg': ['2rem', { lineHeight: '2.875rem' }],
+
+        // xl size 38px, line-height 46px in rem
+        'xl': ['2.375rem', { lineHeight: '2.875rem' }],
+
       },
+
+      screens: {
+        '3xl': '1920px',
+        // => @media (min-width: 992px) { ... }
+      },
+
     },
 
     spacing: {

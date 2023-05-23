@@ -11,3 +11,8 @@ preferences:
         - departure_date
         - email
         - phone
+    gallery:
+      columns:
+        - title
+        - slug
+        - status
