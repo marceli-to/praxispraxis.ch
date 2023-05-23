@@ -25,7 +25,9 @@
     }
 
     const content = document.querySelector(selectors.content);
-    content.classList.toggle('is-hidden');
+    if (content) {
+      content.classList.toggle('is-hidden');
+    }
   };
 
   init();
