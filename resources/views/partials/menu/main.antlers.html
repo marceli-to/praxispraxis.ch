@@ -1,14 +1,17 @@
 <nav data-menu class="menu">
   <ul>
-    {{ partial:menu/item :url="'/angebot'" :text="'Angebot'" }}
-    {{ partial:menu/item :url="'/angebot'" :text="'Freie Termine'" :icon="'arrow'" }}
+    {{ nav:collection:pages navigation:is="services" sort="order" }}
+      {{ partial:menu/item :url="url" :text="title" }}
+    {{ /nav:collection:pages }}
   </ul>
   <ul class="mt-18">
-    {{ partial:menu/item :url="'/angebot'" :text="'Prozessarbeit'" }}
-    {{ partial:menu/item :url="'/angebot'" :text="'Anwendungsfelder'" }}
+    {{ nav:collection:pages navigation:is="work" sort="order" }}
+      {{ partial:menu/item :url="url" :text="title" }}
+    {{ /nav:collection:pages }}
   </ul>
   <ul class="mt-18">
-    {{ partial:menu/item :url="'/angebot'" :text="'Über mich'" }}
-    {{ partial:menu/item :url="'kontakt'" :text="'Kontakt'" }}
+    {{ nav:collection:pages navigation:is="meta" sort="order" }}
+      {{ partial:menu/item :url="url" :text="title" }}
+    {{ /nav:collection:pages }}
   </ul>
 </nav>

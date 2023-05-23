@@ -1,77 +1,141 @@
 title: Page
-sections:
+tabs:
   main:
     display: Main
-    fields:
+    sections:
       -
-        handle: title
-        field:
-          type: text
-          required: true
-          validate:
-            - required
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              collapse: false
+              always_show_set_button: false
+              previews: true
+              smart_typography: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - removeformat
+                - anchor
+                - h1
+                - h2
+                - h3
+                - h4
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              reading_time: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              antlers: false
+              remove_empty_nodes: false
+              display: Content
+              type: bard
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+          -
+            handle: external_link
+            field:
+              type: link
+              display: 'External link'
+              icon: link
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
       -
-        handle: content
-        field:
-          collapse: false
-          always_show_set_button: false
-          previews: true
-          smart_typography: false
-          buttons:
-            - bold
-            - italic
-            - unorderedlist
-            - removeformat
-            - anchor
-            - h1
-            - h2
-            - h3
-            - h4
-          save_html: false
-          inline: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
-          antlers: false
-          remove_empty_nodes: false
-          display: Content
-          type: bard
-          icon: bard
-          listable: hidden
-          instructions_position: above
-          visibility: visible
+        display: SEO
+        instructions: 'Description (Meta, SEO)'
+        fields:
+          -
+            handle: description
+            field:
+              antlers: false
+              type: textarea
+              display: Description
+              icon: textarea
+              instructions: 'Description used for Meta / SEO, max. 3 sentences'
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              hide_display: false
   sidebar:
     display: Sidebar
-    fields:
+    sections:
       -
-        handle: slug
-        field:
-          type: slug
-          localizable: true
-      -
-        handle: template
-        field:
-          type: template
-          display: Template
-          localizable: true
-          instructions_position: above
-          listable: hidden
-          visibility: visible
-          hide_partials: true
-          blueprint: false
-          folder: templates/content
-      -
-        handle: parent
-        field:
-          type: entries
-          collections:
-            - pages
-          max_items: 1
-          listable: false
-          localizable: true
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: navigation
+            field:
+              options:
+                services: Angebot
+                work: Arbeit
+                meta: 'Über mich'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Navigation
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: icon
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Icon
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              hide_partials: true
+              blueprint: false
+              folder: templates/content
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

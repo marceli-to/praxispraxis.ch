@@ -1,6 +1,6 @@
 <li>
   <a 
-    href="/{{ url }}" 
+    href="{{ external_link ? external_link : url }}" 
     target="{{ target ?? '_self' }}" 
     class="text-base xl:text-lg !leading-none upppercase inline-block pl-18 lg:pl-0 pt-2 pb-12 xl:pb-16 bg-cyan hover:bg-magenta transition-colors {{ if icon }} flex items-center {{ /if }}">
     {{ if icon }}

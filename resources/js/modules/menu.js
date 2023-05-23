@@ -21,7 +21,7 @@
 
     const subline = document.querySelector(selectors.subline);
     if (subline) {
-      subline.classList.toggle('!hidden');
+      subline.classList.toggle('is-hidden');
     }
 
     const content = document.querySelector(selectors.content);
