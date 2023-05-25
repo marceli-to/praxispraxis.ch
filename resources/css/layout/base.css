@@ -26,4 +26,48 @@ main {
   @apply text-deepblue;
 }
 
+.content h2 {
+  @apply mb-18 3xl:mb-36 text-base 3xl:text-lg
+}
+
+.content h2:not(:first-of-type) {
+  @apply border-t border-black pt-18 3xl:pt-36
+}
+
+.content h3 {
+  @apply font-semibold
+}
+
+.content p {
+  @apply mb-18 3xl:mb-38
+}
+
+.content ul {
+  @apply list-none m-0 ml-20 mb-18 3xl:mb-36
+}
+
+.content ul + p {
+  @apply mt-15
+}
+
+.content li {
+  @apply list-item pl-4
+}
+
+.content li p {
+  @apply m-0
+}
+
+.content ul li:before {
+  @apply content-['\002F'] absolute -ml-25
+}
+
+.content details p:last-child {
+  @apply mb-0
+}
+
+.content details ul {
+  @apply mb-0
+}
+
 

@@ -2,7 +2,29 @@
   <div class="absolute w-full top-0 z-0">
     {{ partial:components/gallery }}
   </div>
-  <article class="content bg-cyan w-full lg:w-[50%] p-18 relative z-10" data-content>
+  <article class="content bg-cyan w-full lg:w-[50%] px-18 py-18 lg:py-36 3xl:pt-66 3xl:pb-72 relative z-10" data-content>
     {{ content }}
+      
+    {{ if type == 'collapsible' }}
+        {{ partial:components/collapsible :class="'first-of-type:border-t first-of-type:border-black'" }}
+      {{ /if }}
+      
+      {{ if type == 'text' }}
+        {{ text }}
+      {{ /if }}
+
+      {{ if type == 'video' }}
+        {{ partial:components/video :class="'first-of-type:border-t first-of-type:border-black'" }}
+      {{ /if }}
+
+      {{ if type == 'portrait' }}
+        {{ partial:components/portrait }}
+      {{ /if }}
+
+      {{ if type == 'imprint' }}
+        {{ partial:components/imprint }}
+      {{ /if }}
+
+    {{ /content }}
   </article>
 {{ /partial:layout/section }}

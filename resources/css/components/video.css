@@ -1,0 +1,7 @@
+.video {
+  @apply aspect-video relative;
+}
+
+.video iframe {
+  @apply absolute inset-0 w-full h-full;
+}

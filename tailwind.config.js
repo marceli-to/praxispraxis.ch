@@ -25,13 +25,13 @@ module.exports = {
       },
 
       fontSize: {
-        // size 14px, line-height 17px in rem
-        // size 15px, line-height 18px in rem
+        // xxs size 12px, line-height 18px in rem
+        'xxs': ['0.75rem', { lineHeight: '1.125rem' }],
 
         'xs': ['1rem', { lineHeight: '1.3rem' }],
 
         // sm size 21px, line-height 24px in rem
-        'sm': ['1.3125rem', { lineHeight: '1.5rem' }],
+        'sm': ['1.3125rem', { lineHeight: '1.55rem' }],
 
         // base size 23px, line-height 36px in rem
         'base': ['1.4375rem', { lineHeight: '2.25rem' }],

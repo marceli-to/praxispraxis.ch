@@ -48,15 +48,40 @@ tabs:
               listable: hidden
               instructions_position: above
               visibility: visible
-          -
-            handle: external_link
-            field:
-              type: link
-              display: 'External link'
-              icon: link
-              listable: hidden
-              instructions_position: above
-              visibility: visible
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    collapsible:
+                      display: Collapsible
+                      instructions: null
+                      icon: layout-split-horizontal
+                      fields:
+                        -
+                          import: collapsible
+                    video:
+                      display: Video
+                      instructions: null
+                      icon: media-webcam-video
+                      fields:
+                        -
+                          import: video
+                    portrait:
+                      display: Portrait
+                      instructions: null
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: portrait
+                    imprint:
+                      display: Imprint
+                      instructions: null
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: imprint
               hide_display: false
       -
         display: SEO
@@ -106,6 +131,16 @@ tabs:
               hide_display: false
               validate:
                 - required
+          -
+            handle: external_link
+            field:
+              type: link
+              display: 'External link'
+              icon: link
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
             handle: icon
             field:

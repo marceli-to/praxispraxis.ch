@@ -1,8 +1,8 @@
 <li>
   <a 
     href="{{ external_link ? external_link : url }}" 
-    target="{{ target ?? '_self' }}" 
-    class="text-base 3xl:text-lg !leading-none upppercase inline-block pl-18 lg:pl-0 pt-2 pb-12 xl:pb-16 bg-cyan hover:bg-magenta transition-colors {{ if icon }} flex items-center {{ /if }}">
+    target="{{ external_link ? '_blank' : '_self' }}" 
+    class="text-base 3xl:text-lg !leading-none upppercase inline-block pl-18 lg:pl-0 pt-2 pb-12 xl:pb-16 bg-cyan hover:bg-magenta {{ if is_current }} bg-magenta {{ /if }} {{ if icon }} flex items-center {{ /if }}">
     {{ if icon }}
       {{ partial:icons/{{ icon }} }}
     {{ /if }}

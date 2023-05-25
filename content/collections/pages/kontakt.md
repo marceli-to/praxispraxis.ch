@@ -4,13 +4,13 @@ blueprint: page
 title: Kontakt
 template: templates/content/default
 updated_by: 57ce677f-65c0-4ee0-bc33-c4255edf305b
-updated_at: 1684858578
+updated_at: 1685027919
 navigation: meta
 content:
   -
     type: heading
     attrs:
-      level: 1
+      level: 2
     content:
       -
         type: text
@@ -20,37 +20,131 @@ content:
     content:
       -
         type: text
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ex omnis neque, delectus, porro dignissimos veniam vero quo tempore eos corrupti autem tenetur laboriosam sint inventore nihil, unde dolor cupiditate?'
+        text: 'Stephan Becker'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'T 41 78 766 52 06'
   -
     type: paragraph
     content:
-      -
-        type: text
-        text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quasi laborum saepe obcaecati voluptas, voluptate, dolor fuga rerum tempora necessitatibus ullam itaque illo at cumque minus, quis explicabo dignissimos eligendi?'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Lorem ipsum dolor sit amet '
       -
         type: text
         marks:
           -
             type: link
             attrs:
-              href: 'mailto:m@marceli.to'
+              href: 'mailto:pop@praxispraxis.ch'
               rel: null
               target: _blank
               title: null
-        text: consectetur
+        text: pop@praxispraxis.ch
+      -
+        type: hardBreak
       -
         type: text
-        text: ' adipisicing elit. Et inventore eius exercitationem dolorum fugiat necessitatibus eveniet aliquid sequi non pariatur nisi ratione a obcaecati cum alias quam, natus qui facilis.'
+        text: 'Bederstrasse 31'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '8002 Zürich'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, aliquam nobis! Quis, blanditiis incidunt debitis aspernatur veritatis, dignissimos odit veniam necessitatibus eaque cum fugiat vero atque perspiciatis voluptate totam? Unde.'
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://goo.gl/maps/ksygxi9URCmRVbRJ7'
+              rel: null
+              target: _blank
+              title: null
+        text: 'Google Karte'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: Konditionen
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Die Einzelsitzungen finden in den Räumlichkeiten der Praxisgemeinschaft Bederstrasse 31, 8002 Zürich statt.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Mein Honorar orientiert sich an marktüblichen Tarifen, das persönliche Einkommen der Beteiligten kann berücksichtigt werden'
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: '. Termine müssen spätestens 24 Stunden vorher abgesagt oder verschoben werden. Bei Nichteinhaltung wird der Termin verrechnet.'
+  -
+    type: set
+    attrs:
+      id: li3a3f4l
+      values:
+        type: imprint
+        text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: Impressum
+              -
+                type: hardBreak
+              -
+                type: text
+                text: 'Inhalt: Stephan Becker '
+              -
+                type: hardBreak
+              -
+                type: text
+                text: 'Fotografie: xxx '
+              -
+                type: hardBreak
+              -
+                type: text
+                text: 'Konzept/Grafik: Alexandra Noth, '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://herkulesdesign.com'
+                      rel: null
+                      target: _blank
+                      title: null
+                text: 'herkulesdesign.com '
+              -
+                type: hardBreak
+              -
+                type: text
+                text: 'Programmierung: Marcel Stadelmann, '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://marceli.to'
+                      rel: null
+                      target: _blank
+                      title: null
+                text: marceli.to
+  -
+    type: paragraph
 ---
