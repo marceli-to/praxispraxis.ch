@@ -4,7 +4,7 @@ blueprint: page
 title: Prozessarbeit
 navigation: work
 updated_by: 57ce677f-65c0-4ee0-bc33-c4255edf305b
-updated_at: 1685025622
+updated_at: 1685029553
 content:
   -
     type: heading
@@ -56,21 +56,21 @@ content:
       id: li38iyxo
       values:
         type: video
-        code: '<iframe title="vimeo-player" src="https://player.vimeo.com/video/528756487?h=ff420a4594" width="640" height="360" frameborder="0"  allowfullscreen></iframe>'
+        code: '<iframe title="vimeo-player" src="https://player.vimeo.com/video/528756487?h=ff420a4594" width="640" height="360" frameborder="0" loading="lazy" allowfullscreen></iframe>'
   -
     type: set
     attrs:
       id: li38q7yu
       values:
         type: video
-        code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iykUKW3Lijg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iykUKW3Lijg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>'
   -
     type: set
     attrs:
       id: li38qwzn
       values:
         type: video
-        code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/29xZDZHgYxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        code: '<iframe width="560" height="315" src="https://www.youtube.com/embed/29xZDZHgYxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>'
   -
     type: paragraph
 ---
