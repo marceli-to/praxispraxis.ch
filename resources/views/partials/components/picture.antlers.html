@@ -24,6 +24,9 @@
     width="1600" 
     height="1600" 
     class="block aspect-square" 
-    alt="{{ title }}" 
-    loading="lazy">
+    alt="{{ title }}"
+    {{ if !first }}
+    loading="lazy"
+    {{ /if }}
+    >
 </picture>
