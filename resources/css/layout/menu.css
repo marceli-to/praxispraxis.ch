@@ -19,7 +19,7 @@
 }
 
 .menu {
-  @apply hidden fixed left-0 top-36 z-50 lg:!block lg:top-auto lg:bottom-72 lg:left-auto lg:translate-x-full lg:right-[calc((100%-580px)/2)] xl:right-[calc((100%-660px)/2)] 3xl:right-[calc((100%-1200px)/2)]
+  @apply hidden fixed left-0 top-45 z-50 lg:!block lg:top-auto lg:bottom-36 3xl:bottom-72 lg:left-[720px] xl:left-[960px] 2xl:left-[1160px] 3xl:left-auto 3xl:translate-x-full 3xl:right-[calc((100%-1200px)/2)]
 }
 
 .menu.is-visible {

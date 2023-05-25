@@ -1,0 +1,13 @@
+
+{{ if environment == 'local' }}
+<div id="windowSize" class="bg-red-200 text-xs fixed bottom-10 lg:bottom-auto lg:top-10 right-10 inline-block z-50"></div>
+<script>
+  window.addEventListener('resize', displayWindowSize);
+  function displayWindowSize() {
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+    document.getElementById('windowSize').textContent = "w: " + windowWidth + ", h: " + windowHeight;
+  }
+  displayWindowSize();
+</script>
+{{ /if }}

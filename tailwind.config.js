@@ -26,7 +26,9 @@ module.exports = {
 
       fontSize: {
         // size 14px, line-height 17px in rem
-        'xs': ['0.875rem', { lineHeight: '1.0625rem' }],
+        // size 15px, line-height 18px in rem
+
+        'xs': ['1rem', { lineHeight: '1.3rem' }],
 
         // sm size 21px, line-height 24px in rem
         'sm': ['1.3125rem', { lineHeight: '1.5rem' }],
@@ -46,6 +48,7 @@ module.exports = {
       },
 
       screens: {
+        'lg': '960px',
         '3xl': '1920px',
         // => @media (min-width: 992px) { ... }
       },
