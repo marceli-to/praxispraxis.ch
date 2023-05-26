@@ -4,7 +4,7 @@ blueprint: page
 title: Kontakt
 template: templates/content/default
 updated_by: 57ce677f-65c0-4ee0-bc33-c4255edf305b
-updated_at: 1685027919
+updated_at: 1685084137
 navigation: meta
 content:
   -
@@ -25,10 +25,30 @@ content:
         type: hardBreak
       -
         type: text
-        text: 'T 41 78 766 52 06'
+        text: 'Bederstrasse 31'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '8002 Zürich'
+      -
+        type: hardBreak
   -
     type: paragraph
     content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'tel:078 766 52 06'
+              rel: null
+              target: _blank
+              title: null
+        text: '078 766 52 06'
+      -
+        type: hardBreak
       -
         type: text
         marks:
@@ -42,14 +62,6 @@ content:
         text: pop@praxispraxis.ch
       -
         type: hardBreak
-      -
-        type: text
-        text: 'Bederstrasse 31'
-      -
-        type: hardBreak
-      -
-        type: text
-        text: '8002 Zürich'
   -
     type: paragraph
     content:
@@ -89,7 +101,13 @@ content:
         marks:
           -
             type: bold
-        text: '. Termine müssen spätestens 24 Stunden vorher abgesagt oder verschoben werden. Bei Nichteinhaltung wird der Termin verrechnet.'
+        text: '. '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Termine müssen spätestens 24 Stunden vorher abgesagt oder verschoben werden. Bei Nichteinhaltung wird der Termin verrechnet.'
   -
     type: set
     attrs:
@@ -112,7 +130,7 @@ content:
                 type: hardBreak
               -
                 type: text
-                text: 'Fotografie: xxx '
+                text: 'Fotografie: Stephan Becker '
               -
                 type: hardBreak
               -
