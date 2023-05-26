@@ -2,9 +2,9 @@
 id: 7de02c11-1aa5-4f4e-b3fb-9d5eafceec88
 blueprint: page
 title: Methoden
-navigation: services
+navigation: work
 updated_by: 57ce677f-65c0-4ee0-bc33-c4255edf305b
-updated_at: 1685084423
+updated_at: 1685084731
 content:
   -
     type: heading
