@@ -3,7 +3,7 @@ id: d3ca9bdb-c3ab-4ba2-8f33-9a0776a8ad0f
 blueprint: page
 title: Angebot
 updated_by: 57ce677f-65c0-4ee0-bc33-c4255edf305b
-updated_at: 1685023011
+updated_at: 1685084798
 navigation: services
 content:
   -
@@ -53,7 +53,7 @@ content:
             content:
               -
                 type: text
-                text: 'Die zeitliche Dauer eines Coachings variiert ausgehend von Ihren Bedürfnissen, Erwartungen und Voraussetzungen. Möglich sind kurzzeitige Interventionen, wie auch längere Coachingverläufe mit unterschiedlich häufigen Sitzungsfrequenzen.'
+                text: '[TEXT]'
   -
     type: set
     attrs:
