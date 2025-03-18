@@ -36,3 +36,4 @@ editor:
     - 'edit user groups'
     - 'edit roles'
     - 'access cache utility'
+    - 'access default site'
