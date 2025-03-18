@@ -16,4 +16,11 @@ export default defineConfig({
       'resources/js/app.js',
     ]),
   ],
+  server: {
+    hmr: {
+      host: 'localhost',
+    },
+    cors: true,
+    origin: 'https://praxispraxis.ch.test',
+  },
 });
